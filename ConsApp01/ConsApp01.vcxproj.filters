@@ -26,5 +26,8 @@
     <ClInclude Include="Classdefault.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="FileRead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
