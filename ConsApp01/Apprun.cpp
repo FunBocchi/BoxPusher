@@ -9,5 +9,7 @@ int main() {
 		DrawMap(mapInfo);
 	}
 	std::cout << "Connn" << std::endl;
+	delete[] mapInfo;
+	mapInfo = nullptr;
 	return 0;
 }
