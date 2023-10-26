@@ -1,18 +1,13 @@
 #include "Classdefault.h"
-#include "FileRead.h"
+#include <fstream>
+
+
 int main() {
 	std::ifstream inputFile("stageData.txt", std::ifstream::binary);
-	inputFile.seekg(0, std::ifstream::end);
-
-	int fileSize = static_cast<int>(inputFile.tellg());
-	inputFile.seekg(0, std::ifstream::beg);
-	char* fileImage = new char[fileSize];
-	inputFile.read(fileImage, fileSize);
-
-	std::cout.write(fileImage, fileSize);
-	std::cout << std::endl;
-
-
+	inputFile.seekg(0, inputFile.end);
+	int fileSize = 0;
+	fileSize = static_cast<int>(inputFile.tellg());
+	inputFile.seekg(0, inputFile.beg);
 
 
 
